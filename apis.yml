@@ -1,0 +1,80 @@
+aid: elation
+name: Elation Health
+description: >-
+  Elation Health provides a primary care EHR platform with a REST API for
+  managing patient profiles, clinical encounters, orders, results, prescriptions,
+  and direct secure messaging in ambulatory settings. The API enables
+  interoperability by integrating patient data from third-party sources,
+  supporting patient engagement, clinical operations, scheduling, pharmacy
+  management, and practice administration through OAuth2-secured REST endpoints.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/elation/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - EHR
+  - Electronic Health Records
+  - Primary Care
+  - Healthcare
+  - FHIR
+  - Clinical
+  - Patients
+  - Prescriptions
+  - Messaging
+apis:
+  - aid: elation:elation-health-api
+    name: Elation Health REST API
+    description: >-
+      RESTful API for Elation's primary care EHR platform enabling management of
+      patient profiles, visit notes, clinical documents, problems, allergies,
+      immunizations, vitals, medications, lab orders, imaging orders, referrals,
+      appointments, insurance, billing, pharmacy, messaging, and practice
+      administration. Supports OAuth2 client credentials authentication with
+      both sandbox and production environments.
+    humanURL: https://docs.elationhealth.com/reference/api-overview
+    baseURL: https://app.elationemr.com/api/2.0/
+    tags:
+      - Patients
+      - Clinical
+      - Orders
+      - Appointments
+      - Pharmacy
+      - Messaging
+      - Billing
+    properties:
+      - type: Documentation
+        url: https://docs.elationhealth.com/reference/api-overview
+      - type: OpenAPI
+        url: https://docs.elationhealth.com/llms.txt
+      - type: Authentication
+        url: https://docs.elationhealth.com/reference/oauth
+      - type: Sandbox
+        url: https://www.elationhealth.com/contact-us/sandbox/
+common:
+  - type: Website
+    url: https://www.elationhealth.com/
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: GitHubOrg
+    url: https://github.com/elationemr
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/elationhealth
+  - type: Blog
+    url: https://www.elationhealth.com/resources/blogs
+  - type: Pricing
+    url: https://www.elationhealth.com/contact-us/pricing/
+  - type: StatusPage
+    url: https://elationhealth.statuspage.io
+  - type: X
+    url: https://x.com/elationhealth
+  - type: Plans
+    url: plans/elation-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/elation-rate-limits.yml
+  - type: FinOps
+    url: finops/elation-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
