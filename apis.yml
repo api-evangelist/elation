@@ -53,6 +53,8 @@ apis:
       - type: Sandbox
         url: https://www.elationhealth.com/contact-us/sandbox/
 common:
+  - type: OAuthScopes
+    url: scopes/elation-scopes.yml
   - type: Website
     url: https://www.elationhealth.com/
   - type: Documentation

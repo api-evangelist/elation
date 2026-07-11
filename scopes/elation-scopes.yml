@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/elation-elation-health-api-openapi.yml
+schemes:
+- name: oauth2
+  source: openapi/elation-elation-health-api-openapi.yml
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://sandbox.elationemr.com/api/2.0/oauth2/token/
+scopes:
+- scope: apiv2
+  description: Full API access
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/elation-elation-health-api-openapi.yml
