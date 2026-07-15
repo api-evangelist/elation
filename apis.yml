@@ -53,6 +53,8 @@ apis:
       - type: Sandbox
         url: https://www.elationhealth.com/contact-us/sandbox/
 common:
+  - type: AgenticAccess
+    url: agentic-access/elation-agentic-access.yml
   - type: DomainSecurity
     url: security/elation-domain-security.yml
   - type: Authentication
