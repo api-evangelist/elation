@@ -8,7 +8,20 @@ description: >-
   supporting patient engagement, clinical operations, scheduling, pharmacy
   management, and practice administration through OAuth2-secured REST endpoints.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elation.png
 url: https://raw.githubusercontent.com/api-evangelist/elation/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -24,34 +37,214 @@ tags:
   - Prescriptions
   - Messaging
 apis:
-  - aid: elation:elation-health-api
-    name: Elation Health REST API
-    description: >-
-      RESTful API for Elation's primary care EHR platform enabling management of
-      patient profiles, visit notes, clinical documents, problems, allergies,
-      immunizations, vitals, medications, lab orders, imaging orders, referrals,
-      appointments, insurance, billing, pharmacy, messaging, and practice
-      administration. Supports OAuth2 client credentials authentication with
-      both sandbox and production environments.
-    humanURL: https://docs.elationhealth.com/reference/api-overview
-    baseURL: https://app.elationemr.com/api/2.0/
-    tags:
-      - Patients
-      - Clinical
-      - Orders
-      - Appointments
-      - Pharmacy
-      - Messaging
-      - Billing
-    properties:
-      - type: Documentation
-        url: https://docs.elationhealth.com/reference/api-overview
-      - type: OpenAPI
-        url: https://docs.elationhealth.com/llms.txt
-      - type: Authentication
-        url: https://docs.elationhealth.com/reference/oauth
-      - type: Sandbox
-        url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-allergies-api
+  name: Elation Health Allergies API
+  description: Allergy and drug intolerance tracking
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Allergies
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-allergies-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-appointments-api
+  name: Elation Health Appointments API
+  description: Scheduling and appointment management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Appointments
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-appointments-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-authentication-api
+  name: Elation Health Authentication API
+  description: OAuth2 token management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Authentication
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-authentication-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-billing-api
+  name: Elation Health Billing API
+  description: Billing codes and bill management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Billing
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-billing-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-insurance-api
+  name: Elation Health Insurance API
+  description: Insurance company, plan, and policy management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Insurance
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-insurance-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-lab-orders-api
+  name: Elation Health Lab Orders API
+  description: Laboratory order management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Lab Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-lab-orders-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-medications-api
+  name: Elation Health Medications API
+  description: Medication and prescription management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Medications
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-medications-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-messaging-api
+  name: Elation Health Messaging API
+  description: Secure direct messaging
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Messaging
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-messaging-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-patients-api
+  name: Elation Health Patients API
+  description: Patient profile management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Patients
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-patients-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-physicians-api
+  name: Elation Health Physicians API
+  description: Provider and staff management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Physicians
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-physicians-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-practices-api
+  name: Elation Health Practices API
+  description: Practice administration
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Practices
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-practices-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-problems-api
+  name: Elation Health Problems API
+  description: Patient problem list management
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Problems
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-problems-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
+- aid: elation:elation-visit-notes-api
+  name: Elation Health Visit Notes API
+  description: Clinical encounter documentation
+  humanURL: https://docs.elationhealth.com/reference/api-overview
+  baseURL: https://app.elationemr.com/api/2.0/
+  tags:
+  - Visit Notes
+  properties:
+  - type: OpenAPI
+    url: openapi/elation-visit-notes-api-openapi.yml
+  - type: Documentation
+    url: https://docs.elationhealth.com/reference/api-overview
+  - type: Authentication
+    url: https://docs.elationhealth.com/reference/oauth
+  - type: Sandbox
+    url: https://www.elationhealth.com/contact-us/sandbox/
 common:
   - type: AgenticAccess
     url: agentic-access/elation-agentic-access.yml
