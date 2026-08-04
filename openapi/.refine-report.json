@@ -1,0 +1,38 @@
+{
+  "provider": "elation",
+  "sources": [
+    "elation-allergies-api-openapi.yml",
+    "elation-appointments-api-openapi.yml",
+    "elation-authentication-api-openapi.yml",
+    "elation-billing-api-openapi.yml",
+    "elation-insurance-api-openapi.yml",
+    "elation-lab-orders-api-openapi.yml",
+    "elation-medications-api-openapi.yml",
+    "elation-messaging-api-openapi.yml",
+    "elation-patients-api-openapi.yml",
+    "elation-physicians-api-openapi.yml",
+    "elation-practices-api-openapi.yml",
+    "elation-problems-api-openapi.yml",
+    "elation-visit-notes-api-openapi.yml"
+  ],
+  "outputs": [
+    "elation-allergies-api-openapi.yml",
+    "elation-appointments-api-openapi.yml",
+    "elation-authentication-api-openapi.yml",
+    "elation-billing-api-openapi.yml",
+    "elation-insurance-api-openapi.yml",
+    "elation-lab-orders-api-openapi.yml",
+    "elation-medications-api-openapi.yml",
+    "elation-messaging-api-openapi.yml",
+    "elation-patients-api-openapi.yml",
+    "elation-physicians-api-openapi.yml",
+    "elation-practices-api-openapi.yml",
+    "elation-problems-api-openapi.yml",
+    "elation-visit-notes-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
